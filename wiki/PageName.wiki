@@ -23,3 +23,9 @@
 <code language="java">    Device.setup(token);</code>
  
   * Get device ready
+<code language="java">    Device.ready(new DeviceHandler() {
+       @Override
+       public void handle(Device device) {
+          //device ready
+       }
+    });
