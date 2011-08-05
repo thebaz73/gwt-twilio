@@ -1,9 +1,12 @@
 #summary Quick Start Guide
 
   * = Steps to using Twilio Client in your GWT app =
+    # Add gwt-twilio.jar to your projects classpath
     # Add a link to the Twilio Client javascript file to your html file
-{{{<script type="text/javascript" src="https://static.twilio.com/libs/twiliojs/1.0/twilio.min.js"></script>}}}
-
+      {{{<script type="text/javascript" src="https://static.twilio.com/libs/twiliojs/1.0/twilio.min.js"></script>}}}
+    # Inherit the Twilio module in your GWT Module File
+      {{{<inherits name='com.xedge.twilio.GWTTwilio'/>}}}
+   
 Add your content here.
 
 
