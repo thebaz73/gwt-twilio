@@ -76,3 +76,12 @@
          connection.accept();
        }
     });</code>
+
+  * Listen for accepted connections/answered calls
+<code language="java">    connection.accept(new ConnectionHandler() {
+       @Override
+       public void handle(Connection connection) {
+          //connection accepted
+
+       }
+    });</code>
