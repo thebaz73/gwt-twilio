@@ -71,7 +71,7 @@
        @Override
        public void handle(Connection connection) {
          //access to incoming connection parameters
-         connection.getParameters().getFrom());
+         String from = connection.getParameters().getFrom());
          //accept a call
          connection.accept();
        }
@@ -82,6 +82,23 @@
        @Override
        public void handle(Connection connection) {
           //connection accepted
+       }
+    });</code>
 
+  * Listen for disconnected connections/hangup calls
+<code language="java">    connection.disconnect(new ConnectionHandler() {
+       @Override
+       public void handle(Connection connection) {
+          //connection disconnected
+       }
+    });</code>
+
+  * Listen for errors on the connections/calls
+<code language="java">    connection.error(new ErrorHandler() {
+       @Override
+       public void handle(Error error) {
+          //Connection error
+          String errorMessage = error.getMessage();
+          String errorCode = error.getCode();
        }
     });</code>
