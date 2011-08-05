@@ -46,3 +46,14 @@
     Map<String, String> params = new HashMap<String, String>();
     params.put("contact", "08233433533");
     Device.connect(params);</code>
+
+  * Hangup on all connections
+<code language="java">    Device.disconnectAll();</code>
+
+  * Listen for incoming calls
+<code language="java">    Device.connect(new ConnectionHandler() {
+       @Override
+       public void handle(Connection connection) {
+         //Successfully established call
+       }
+    });</code>
