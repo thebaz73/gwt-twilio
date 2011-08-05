@@ -20,8 +20,6 @@ import com.xedge.twilio.client.ErrorHandler;</code>
 
 
   * Initialize Device with a capability token
-   {{{Device.setup(token);}}}   
+<code language="java">Device.setup(token);</code>
  
   * Get device ready
-<code language="xml">
-<hello target="world"/>
