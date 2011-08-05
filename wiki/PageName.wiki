@@ -28,4 +28,12 @@
        public void handle(Device device) {
           //device ready
        }
-    });
+    });</code>
+
+  * Add device error handler
+<code language="java">    Device.error(new ErrorHandler() {
+       @Override
+       public void handle(Error error) {
+          //error has occured
+       }
+    });</code>
