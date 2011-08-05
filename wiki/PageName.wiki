@@ -11,7 +11,7 @@
 
 = Code Snippets =
   * Import classes
-  <code language="xml">import com.xedge.twilio.client.Connection;
+<code language="xml">import com.xedge.twilio.client.Connection;
 import com.xedge.twilio.client.ConnectionHandler;
 import com.xedge.twilio.client.Device;
 import com.xedge.twilio.client.DeviceHandler;
