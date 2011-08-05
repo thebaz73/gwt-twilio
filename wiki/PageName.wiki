@@ -11,7 +11,7 @@
 
 = Code Snippets =
   * Import classes
-<code language="java">    import com.xedge.twilio.client.Connection;
+<code language="java">     import com.xedge.twilio.client.Connection;
     import com.xedge.twilio.client.ConnectionHandler;
     import com.xedge.twilio.client.Device;
     import com.xedge.twilio.client.DeviceHandler;
@@ -20,6 +20,6 @@
 
 
   * Initialize Device with a capability token
-<code language="java">Device.setup(token);</code>
+<code language="java">    Device.setup(token);</code>
  
   * Get device ready
