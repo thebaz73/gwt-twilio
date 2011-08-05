@@ -50,10 +50,29 @@
   * Hangup on all connections
 <code language="java">    Device.disconnectAll();</code>
 
-  * Listen for incoming calls
+  * Listen for calls that are successfully established
 <code language="java">    Device.connect(new ConnectionHandler() {
        @Override
        public void handle(Connection connection) {
          //Successfully established call
+       }
+    });</code>
+
+  * Listen for calls that end
+<code language="java">    Device.disconnect(new ConnectionHandler() {
+       @Override
+       public void handle(Connection connection) {
+         //Successfully established call
+       }
+    });</code>
+
+  * Listen for incoming calls
+<code language="java">    Device.incoming(new ConnectionHandler() {
+       @Override
+       public void handle(Connection connection) {
+         //access to incoming connection parameters
+         connection.getParameters().getFrom());
+         //accept a call
+         connection.accept();
        }
     });</code>
