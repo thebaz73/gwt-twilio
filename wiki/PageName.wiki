@@ -28,7 +28,7 @@
    {{{Device.setup(token);}}}   
  
   * Get device ready
-{{{Device.ready(new DeviceHandler() {
+{{{ Device.ready(new DeviceHandler() {
    @Override
    public void handle(Device device) {
    //"Ready
