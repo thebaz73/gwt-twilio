@@ -11,7 +11,7 @@
 
 = Code Snippets =
   * Import classes
-     {{{import com.xedge.twilio.client.Connection;}}}
+  {{{import com.xedge.twilio.client.Connection;}}}
 
       {{{import com.xedge.twilio.client.ConnectionHandler;}}}
 
