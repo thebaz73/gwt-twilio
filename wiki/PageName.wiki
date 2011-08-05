@@ -10,4 +10,14 @@
 
 
 = Code Snippets =
-   'Device.setup(token);'   //Initialize Twilio.Device with a capability token
+  * Import classes
+      {{{import com.xedge.twilio.client.Connection;
+import com.xedge.twilio.client.ConnectionHandler;
+import com.xedge.twilio.client.Device;
+import com.xedge.twilio.client.DeviceHandler;
+import com.xedge.twilio.client.Error;
+import com.xedge.twilio.client.ErrorHandler;
+}}}
+
+  * Initialize Device with a capability token
+   {{{Device.setup(token);}}}   
