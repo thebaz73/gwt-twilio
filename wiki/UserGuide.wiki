@@ -2,7 +2,7 @@
 Read the Twilio Client docs http://www.twilio.com/docs/client/
   * = Steps to using Twilio Client in your GWT app =
     # Add gwt-twilio.jar to your projects classpath
-    # Add a link to the Twilio Client javascript file to your html file
+    # Add a link to the Twilio Client javascript file to your html file NB. Do not use https since it causes with some browsers.
       <code language="xml"><script type="text/javascript" src="http://static.twilio.com/libs/twiliojs/1.0/twilio.min.js"></script></code>
     # Inherit the Twilio module in your GWT Module File
        <code language="xml"><inherits name='com.xedge.twilio.GWTTwilio'/></code>
@@ -19,7 +19,7 @@ Read the Twilio Client docs http://www.twilio.com/docs/client/
     import com.xedge.twilio.client.ErrorHandler;</code>
 
 
-  * Initialize Device with a capability token
+  * Initialize Device with a capability token http://www.twilio.com/docs/client/capability-tokens
 <code language="java">    Device.setup(token);</code>
  
   * Get device ready
