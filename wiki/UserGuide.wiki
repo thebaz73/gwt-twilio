@@ -62,7 +62,7 @@ Read the Twilio Client docs http://www.twilio.com/docs/client/
 <code language="java">    Device.disconnect(new ConnectionHandler() {
        @Override
        public void handle(Connection connection) {
-         //Successfully established call
+         //Call has ended
        }
     });</code>
 
