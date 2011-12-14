@@ -102,3 +102,12 @@ Read the Twilio Client docs http://www.twilio.com/docs/client/
           String errorCode = error.getCode();
        }
     });</code>
+
+  * Listen for availability state changes for any client currently associated with your Twilio account
+<code language="java">    Device.presence(new PresenceHandler() {
+       @Override
+       public void handle(PresenceEvent presenceEvent) {
+          String clientName = presenceEvent.getFrom();
+          boolean availability = presenceEvent.isAvailable();
+       }
+    });</code>
